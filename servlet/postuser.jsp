@@ -5,10 +5,10 @@
         <title>Информация о пользователе</title>
     </head>
     <body>
-        <p>Name: <%= request.getParameter("username") %></p>
-        <p>Country: <%= request.getParameter("country") %></p>
-        <p>Gender: <%= request.getParameter("gender") %></p>
-        <h4>Selected courses</h4>
+        <p>Имя: <%= request.getParameter("username") %></p>
+        <p>Страна: <%= request.getParameter("country") %></p>
+        <p>Пол: <%= request.getParameter("gender") %></p>
+        <h4>Выбранные курсы</h4>
         <ul>
         <%
             String[] courses = request.getParameterValues("courses");
